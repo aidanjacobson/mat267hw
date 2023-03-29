@@ -43,7 +43,7 @@ async function getJSON(url) {
             resolve(JSON.parse(x.responseText));
         }
         x.onerror = function(e) {
-            alert(e.message);
+            alert("Error! reload pls, or use cached values");
         }
         x.send();
     })
